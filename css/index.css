@@ -1,0 +1,218 @@
+/******************************************************/
+/* Hollow Knight Website - Index style sheet          */
+/* Author: Jesús Herrera Sánchez                      */
+/* Version 1.0 - 28/11/2022                           */
+/*                                                    */
+/******************************************************/
+
+
+
+
+
+
+
+
+/********************** Fonts *************************/
+
+@font-face {font-family: titles;
+      src:url('../fonts/TrajanProRegular.ttf');}
+
+@font-face {font-family: texts;
+      src:url('../fonts/SourceSansPro-Regular.ttf');}
+
+/****************** General style *********************/
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+}
+body {background: radial-gradient(circle farthest-corner at 50% 50%, #2c3d68 0%, #000000 100%);
+      color: white;
+      font-family:texts;}
+
+
+
+/*********************** HERO SECTION *****************/
+
+#hero{
+
+      background-image: url(../images/Background.webp);
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;}
+
+.title {
+      font-family:titles;
+      font-size:4.5rem;
+      text-align:center;
+      color: rgb(255, 255, 255);
+      text-shadow: 3px 3px 3px black,
+                   3px 3px 3px black,
+                   -3px 3px 3px black,
+                   0px -3px 2px black;
+}
+
+#title_image1 {
+      width: 30%;
+      margin-top: 12%;
+      margin-left:2%;
+}
+
+#title_image2 {
+      margin-top:1%;
+      width: 45%;
+      margin-left:1%;
+}
+
+#enterprise_icon {
+      width:15%;
+      top: 8%;
+      left: 40%;
+      position:relative;
+}
+
+/*********************** SPELLS SECTION ************/
+
+#Spells {
+      margin-top:3%;
+}
+
+.text {
+       font-size:1.5rem;
+       text-align:center;
+       color:white;}
+#spells_text {
+      margin-top:4%;
+      margin-bottom:2%;
+}
+
+.spellcolumn {
+      padding: 20px;
+}
+
+.grid {display:grid;
+       grid-template-columns: 33% 33% 33%;
+       }
+
+.card {box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.5); /* Add shadows to create the "card" effect */
+       transition: 0.3s;
+       padding:10px;;
+       }
+
+.card img {
+      width:100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {box-shadow: 0 8px 16px 0 rgba(245, 245, 245, 0.2);}
+
+/* Add some padding inside the card container */
+.container {padding: 2px 16px;
+            text-align:center;}
+
+/******************** ABILITIES SECTION *****************/
+
+h3 {
+      padding-top:6%;
+      padding-bottom: 2%;
+}
+
+#abilities_text {
+      padding-bottom:4%;
+}
+
+/******************** SLIDESHOW FROM W3SCHOOLS **********/
+
+/* Slideshow container */
+.slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .slideshow_text {
+      font-family:titles;
+      color: #f2f2f2;
+      font-size: 2rem;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 3px 3px 3px black,
+                   3px 3px 3px black,
+                   -3px 3px 3px black,
+                   0px -3px 2px black;
+    }
+    
+    /* Number text (1/4 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
