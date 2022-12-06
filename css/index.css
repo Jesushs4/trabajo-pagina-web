@@ -63,11 +63,11 @@ body {background: radial-gradient(circle farthest-corner at 50% 50%, #2c3d68 0%,
       margin-top:1%;
       width: 45%;
       margin-left:1%;
+      padding-bottom: 5%;
 }
 
 #enterprise_icon {
-      width:15%;
-      top: 8%;
+      width:10%;
       left: 40%;
       position:relative;
 }
@@ -88,14 +88,14 @@ body {background: radial-gradient(circle farthest-corner at 50% 50%, #2c3d68 0%,
 }
 
 .spellcolumn {
-      padding: 20px;
+      padding: 4%;
 }
 
 .grid {display:grid;
        grid-template-columns: 33% 33% 33%;
        }
 
-.card {box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.5); /* Add shadows to create the "card" effect */
+.card {box-shadow: 0 4px 8px 0 rgba(79, 74, 97, 0.5); /* Add shadows to create the "card" effect */
        transition: 0.3s;
        padding:10px;;
        }
@@ -216,3 +216,41 @@ h3 {
       to {opacity: 1}
     }
 
+/***************** CHARMS SECTION ***************/
+
+h4 {padding-top: 5%;
+    margin-bottom: 2%;}
+
+.grid2 {display:grid;
+        grid-template-columns: 50% 50%;}
+
+.charmcolumn {padding: 4%;}
+.charmcolumn li {margin-bottom:2%;
+      font-size:1rem}
+
+
+#meleelist {
+      text-align: left;
+      padding: 20px;
+      
+}
+
+
+#spellcasterlist {
+      text-align: right;
+}
+h5 {margin-bottom: 4%;}
+
+.grid3 {display:grid;
+        grid-template-columns: 25% 25% 25% 25%;}
+
+.dlcscolumn {font-size:2rem;
+             padding:5%;}
+
+h6 {padding-top: 5%;
+      margin-bottom:4%;}
+#sequeltext {margin-bottom:4%;}
+
+iframe {position:relative;
+      left:50%;
+      transform: translate(-50%);}
