@@ -7,11 +7,22 @@
     <title>Hollow Knight</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
     <nav>
-        <p>BARRA DE NAVEGACIÓN</p>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="activated">Home</a>
+            <a href="#Spells">Spells</a>
+            <a href="#Abilities">Abilities</a>
+            <a href="#Charms">Charms</a>
+            <a href="#DLCS">DLCS</a>
+            <a href="#Sequel">Silksong</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div> 
     </nav>
 
     <section id="hero">
@@ -65,8 +76,8 @@
 
         </div>
     </section>
-    <section id="Abilites"> <!-- menu flechas-->
-        <div class="title abilites">
+    <section id="Abilities"> <!-- menu flechas-->
+        <div class="title abilities">
             <h3>ABILITIES</h3>
         </div>
         <div class="text">
@@ -181,7 +192,7 @@
 
     </section>
 
-    <section id="DLCS"> <!-- grid -->
+    <!-- <section id="DLCS">
         <div class="title DLCS">
             <h4>DLCS</h4>
             <div class="grid3">
@@ -203,6 +214,59 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="DLCS"> <!-- grid -->
+        <div class="title DLCS">
+            <h4>DLCS</h4>
+            <div class="grid3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./images/hiddendreams.webp" alt="Hidden Dreams" style="width:100%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h7><strong>HIDDEN DREAMS</strong></h7>
+                        <p id="cardtext">New opponents emerge from the world of dreams. Use your dream nail to fight them!</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./images/lifeblood.webp" alt="Lifeblood" style="width:100%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h7><strong>LIFEBLOOD</strong></h7>
+                        <p id="cardtext">New areas to explore in the map along with new mechanics during the whole game.</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./images/grimmtroupe.webp" alt="Avatar" style="width:100%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h7><strong>THE GRIMM TROUPE</strong></h7>
+                        <p id="cardtext">Light the nightmare lantern to summon The Grimm Troupe. Will you join them or will you fight them?</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./images/Godmaster.webp" alt="Avatar" style="width:100%">
+                      </div>
+                      <div class="flip-card-back">
+                        <h7><strong>GODMASTER</strong></h7>
+                        <p id="cardtext">Enter the Godhome and prove your value by fighting against the gods themselves.</p>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </section>
 
     <section id="Sequel"> <!-- trailer -->
@@ -215,12 +279,31 @@
         <iframe  width="600" height="350"
         src="https://www.youtube.com/embed/yQxwbZsL14Y">
         </iframe> 
+        <img src="./images/wave.svg">   
     </section>
         
-        <footer>
-
-        </footer>
-    </div>
+    <footer>
+        <div class="grid4">
+            <div class="footercolumn">
+                <img src="./images/klabautermann-hollow.gif">
+            </div>
+            <div class="footercolumn">
+                <a class="link" href="#" class="active">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="link" href="#Spells">Spells</a><br>
+                <a class="link" href="#Abilities">Abilities</a>
+                <a class="link" href="#Charms">Charms</a><br>
+                <a class="link" href="#DLCS">DLCS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="link" href="#Sequel">Silksong</a><br>
+            </div>
+            <div class="footercolumn">
+                <p>Follow us on our social media:</p>
+                <a href="https://es-la.facebook.com/HollowKnightGame/" target='_blank' class="fa fa-facebook"></a>
+                <a href="https://twitter.com/teamcherrygames?lang=es" class="fa fa-twitter"></a><br>
+                <a href="https://www.youtube.com/@TeamCherry" class="fa fa-youtube"></a>
+                <a href="https://www.teamcherry.com.au/" class="fa fa-google"></a>
+            </div>
+        </div>
+    </footer>
     <script src="./js/functions.js"></script>
 </body>
 </html>
