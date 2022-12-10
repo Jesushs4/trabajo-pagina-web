@@ -13,7 +13,7 @@
     
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="#" class="activated">Home</a>
+            <a href="#" >Home</a>
             <a href="#Spells">Spells</a>
             <a href="#Abilities">Abilities</a>
             <a href="#Charms">Charms</a>
@@ -26,13 +26,12 @@
     </nav>
 
     <section id="hero">
-        <div class="title">
+        <div id="maintitle">
                 <img src="./images/title1.png" id="title_image1" alt="Title1"> <br>
                 <h>HOLLOW KNIGHT</h> <br>
                 <img src="./images/title2.png" id="title_image2" alt="Title2">
                 <p><img src="./images/teamcherry.png" id="enterprise_icon" alt="EnterpriseIcon"></p>
         </div>
-            
     </section>
 
     <section id="Spells"> <!-- cards -->
@@ -42,7 +41,7 @@
 
         <div class="text">
             <p id="spells_text">Spells cost 33% of the soul bar. <br> You gather soul by hitting enemies.</p>
-            <img src="./images/Soul.webp" alt="Soul">
+            <img id ="spellimg" src="./images/Soul.webp" alt="Soul">
             <p id="spells_text">You can find three different spells:</p>
         </div>
 
@@ -78,10 +77,10 @@
     </section>
     <section id="Abilities"> <!-- menu flechas-->
         <div class="title abilities">
-            <h3>ABILITIES</h3>
+            <h1>ABILITIES</h1>
         </div>
         <div class="text">
-            <p>Obtain certain abilites through exploring the differents areas of Hollow Knight.</p>
+            <p>Obtain certain abilites through exploring the differents areas of Hollow Knight.</p><br>
             <p id="abilities_text">Those abilities will grant you different moves in order to continue your adventure.</p>
         </div>
         <!-- Slideshow container -->
@@ -128,13 +127,12 @@
 
     <section id="Charms"> <!-- grid alternando-->
         <div class="title charms">
-            <h4>CHARMS</h4>
+            <h1>CHARMS</h1>
         </div>
         <div class="text">
-            <p>There are 40 charms that you can collect during the game.</p>
-            <p>Every charm requires a certain number of notches to be equipped depending on the charm. </p>
-            <p>The player starts with 3 notches, which can be upgraded to 11 notches by finding them around the map.</p><br>
-            <p>You can combine charms in different ways as long as you have the necessary notches.</p> <p>These are the most common builds in the game:</p>
+            <p>There are 40 charms that you can collect during the game.</p><br>
+            <p>Every charm requires a certain number of notches to be equipped depending on the charm. </p><br> 
+            <p>You can combine charms in different ways as long as you have the necessary notches.</p> <br><p>These are the most common builds in the game:</p>
             <div class="grid2">
                 <div class="charmcolumn">
                     <img src="./images/meleebuild.png" style="width:100%">
@@ -192,77 +190,61 @@
 
     </section>
 
-    <!-- <section id="DLCS">
-        <div class="title DLCS">
-            <h4>DLCS</h4>
-            <div class="grid3">
-                <div class="dlcscolumn">
-                Hidden Dreams
-                    <img src="./images/hiddendreams.webp" style="width:100%" alt="Hidden Dreams">
-                </div>
-                <div class="dlcscolumn">
-                Lifeblood
-                    <img src="./images/lifeblood.webp" style="width:100%" alt="Lifeblood">
-                </div>
-                <div class="dlcscolumn">
-                The Grimm Troupe
-                    <img src="./images/grimmtroupe.webp" style="width:100%" alt="The Grimm Troupe">
-                </div>
-                <div class="dlcscolumn">
-                Godmaster
-                    <img src="./images/Godmaster.webp" style="width:100%" alt="Godmaster">
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section id="DLCS"> <!-- grid -->
         <div class="title DLCS">
-            <h4>DLCS</h4>
+            <h1>DLCS</h1>
             <div class="grid3">
+                <div class="dlccolumn">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="./images/hiddendreams.webp" alt="Hidden Dreams" style="width:100%">
                       </div>
                       <div class="flip-card-back">
-                        <h7><strong>HIDDEN DREAMS</strong></h7>
+                        <h3><strong>HIDDEN DREAMS</strong></h3>
                         <p id="cardtext">New opponents emerge from the world of dreams. Use your dream nail to fight them!</p>
                       </div>
                     </div>
                 </div>
+                </div>
+                <div class="dlccolumn">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="./images/lifeblood.webp" alt="Lifeblood" style="width:100%">
                       </div>
                       <div class="flip-card-back">
-                        <h7><strong>LIFEBLOOD</strong></h7>
+                        <h3><strong>LIFEBLOOD</strong></h3>
                         <p id="cardtext">New areas to explore in the map along with new mechanics during the whole game.</p>
                       </div>
                     </div>
                 </div>
+                </div>
+                <div class="dlccolumn">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="./images/grimmtroupe.webp" alt="Avatar" style="width:100%">
                       </div>
                       <div class="flip-card-back">
-                        <h7><strong>THE GRIMM TROUPE</strong></h7>
+                        <h3><strong>THE GRIMM TROUPE</strong></h3>
                         <p id="cardtext">Light the nightmare lantern to summon The Grimm Troupe. Will you join them or will you fight them?</p>
                       </div>
                     </div>
                 </div>
+                </div>
+                <div class="dlccolumn">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
                         <img src="./images/Godmaster.webp" alt="Avatar" style="width:100%">
                       </div>
                       <div class="flip-card-back">
-                        <h7><strong>GODMASTER</strong></h7>
+                        <h3><strong>GODMASTER</strong></h3>
                         <p id="cardtext">Enter the Godhome and prove your value by fighting against the gods themselves.</p>
                       </div>
                     </div>
+                </div>
                 </div>
                 
             </div>
@@ -271,14 +253,14 @@
 
     <section id="Sequel"> <!-- trailer -->
         <div class="title sequel">
-            <h6>SILKSONG</h6>
+            <h1>SILKSONG</h1>
         </div>
         <div class="text">
             <p id="sequeltext">Get ready for the sequel of Hollow Knight, coming in 2023</p>
         </div>
-        <iframe  width="600" height="350"
-        src="https://www.youtube.com/embed/yQxwbZsL14Y">
-        </iframe> 
+        <div class="container2">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/yQxwbZsL14Y"></iframe>
+        </div> 
         <img src="./images/wave.svg">   
     </section>
         
@@ -287,16 +269,19 @@
             <div class="footercolumn">
                 <img src="./images/klabautermann-hollow.gif">
             </div>
-            <div class="footercolumn">
-                <a class="link" href="#" class="active">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a class="link" href="#Spells">Spells</a><br>
+            <div class="footercolumnlink">
+                <a class="link" href="#">Home</a>
                 <a class="link" href="#Abilities">Abilities</a>
-                <a class="link" href="#Charms">Charms</a><br>
-                <a class="link" href="#DLCS">DLCS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                <a class="link" href="#Sequel">Silksong</a><br>
+                
+                <a class="link" href="#DLCS">DLCS</a>
+                
+            </div>
+            <div class="footercolumnlink">
+                <a class="link" href="#Spells">Spells</a>
+                <a class="link" href="#Charms">Charms</a>
+                <a class="link" href="#Sequel">Silksong</a>
             </div>
             <div class="footercolumn">
-                <p>Follow us on our social media:</p>
                 <a href="https://es-la.facebook.com/HollowKnightGame/" target='_blank' class="fa fa-facebook"></a>
                 <a href="https://twitter.com/teamcherrygames?lang=es" class="fa fa-twitter"></a><br>
                 <a href="https://www.youtube.com/@TeamCherry" class="fa fa-youtube"></a>
