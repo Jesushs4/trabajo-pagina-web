@@ -339,8 +339,8 @@ h1 {margin:auto;
       background-color: transparent;
       font-family: texts;
       font-size: 1.5rem;
-      width: 300px;
-      height: 59.1vh;
+      width:40.5vh;
+      height: 59.2vh;
       margin: auto;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
     }
