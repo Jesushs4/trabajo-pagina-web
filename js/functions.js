@@ -1,9 +1,10 @@
-/***************************************************************/
-/* Hollow Knight Website - Index javascript functions          */
-/* Author: Jesús Herrera Sánchez                               */
-/* Version 1.0 - 28/11/2022                                    */
-/*                                                             */
-/***************************************************************/
+/****************************************************************************/
+/*                                                                          */
+/*            Hollow Knight Website - Index JavaScript functions            */
+/*                  Author: Jesús Herrera Sánchez                           */
+/*                    Version 1.0 - 15/12/2022                              */
+/*                                                                          */
+/****************************************************************************/
 
 /********** Slideshow Javascript  **********/
 let slideIndex = 1;

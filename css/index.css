@@ -1,40 +1,39 @@
-/******************************************************/
-/* Hollow Knight Website - Index style sheet          */
-/* Author: Jesús Herrera Sánchez                      */
-/* Version 1.0 - 28/11/2022                           */
-/*                                                    */
-/******************************************************/
-
-
-
-
-
+/*******************************************************************/
+/*                                                                 */
+/*            Hollow Knight Website - Index style sheet            */
+/*                Author: Jesús Herrera Sánchez                    */
+/*                   Version 1.0 - 15/12/2022                      */
+/*                                                                 */
+/*******************************************************************/
 
 
 
 /********************** Fonts *************************/
 
-@font-face {font-family: titles;
-      src:url('../fonts/TrajanProRegular.ttf');}
+@font-face {font-family: titles; /* Font for titles */
+      src:url('../fonts/TrajanProRegular.ttf');} 
 
-@font-face {font-family: texts;
-      src:url('../fonts/SourceSansPro-Regular.ttf');}
+@font-face {font-family: texts; /* Font for texts */
+      src:url('../fonts/SourceSansPro-Regular.ttf');} 
 
 /****************** General style *********************/
 
-html {scroll-behavior : smooth}
+/* Makes the scrolling slower */
+html {scroll-behavior : smooth} 
 
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing:border-box;
-}
+/* Changes for the entire page */
+* {margin: 0;
+   padding: 0;
+   box-sizing:border-box;}  
+
+/* Changes for the body of the page */
 body {background: radial-gradient(circle farthest-corner at 50% 50%, #2c3d68 0%, #000000 100%);
       color: white;
       z-index: -1;
-      font-family:texts;}
+      font-family:texts;} 
 
-.title {margin:auto;
+/* For the titles */      
+.title {margin:auto; 
       font-size: 6rem;
       font-family:titles;
       font-size:4.5rem;
@@ -44,29 +43,35 @@ body {background: radial-gradient(circle farthest-corner at 50% 50%, #2c3d68 0%,
                    3px 3px 3px black,
                    -3px 3px 3px black,
                    0px -3px 2px black;
-}
+      }
 
-h1 {margin:auto;
-  padding: 4% 0 3%;
-  font-size: 5rem;
-}
+/* The section titles */      
+h1 {margin:auto; 
+    padding: 4% 0 3%;
+    font-size: 5rem;
+   }
+
+/* For the general text */   
+.text { 
+    font-size:1.5rem;
+    text-align:center;
+    color:white;
+    }
 
 
 /*********************** NAVIGATION BAR ***************/
 
-/* Add a black background color to the top navigation */
- /* Add a black background color to the top navigation */
- /* Add a black background color to the top navigation */
- nav {position:sticky;
-  top:0;
-  z-index:99;
-  opacity:0.8;}
+ nav {
+      position:sticky; /* We make the nav sticky so it follows us when we scroll down */
+      top:0;
+      z-index:99; /* We make the nav to go over everything else */
+      opacity:0.8;
+     }
 
 .topnav {
-      background-color: rgb(205, 205, 205);
-      overflow: hidden;
-      
-    }
+         background-color: rgb(205, 205, 205);
+         overflow: hidden;
+        }
     
     /* Style the links inside the navigation bar */
     .topnav a {
@@ -77,19 +82,13 @@ h1 {margin:auto;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 1.5rem;
-    }
+      }
     
     /* Change the color of links on hover */
     .topnav a:hover {
       background-color: #ddd;
       color: black;
     }
-    
-    /* Add an active class to highlight the current page DESACTIVADO POR QUE NO LO VOY A PROGRAMAR ASÍ
-    .topnav a.active {
-      background-color: #04AA6D;
-      color: white;
-    }   */
     
     /* Hide the link that should open and close the topnav on small screens */
     .topnav .icon {
@@ -98,7 +97,7 @@ h1 {margin:auto;
     } 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -121,17 +120,19 @@ h1 {margin:auto;
     }
   } 
 
-/*********************** HERO SECTION *****************/
+/*********************** HERO SECTION ***********************/
 
-#hero{
-
+/* The background for the hero section */
+#hero{ 
       background-image: url(../images/Background.webp);
       background-repeat: no-repeat;
       height: 92vh;
       background-position: 50%;
-      background-size: cover;}
+      background-size: cover;
+     }
 
-#maintitle {
+/* For the title of the hero section */     
+#maintitle { 
       font-family:titles;
       font-size:4.5rem;
       text-align:center;
@@ -142,49 +143,52 @@ h1 {margin:auto;
                    0px -3px 2px black;
 }
 
-#title_image1 {
-      width: 30%;
+/* Image 1 Hero Section */
+#title_image1 { 
+        width: 30%;
         padding-top: 12%;
         margin:auto;
-}
+        }
 
-#title_image2 {
+/* Image 2 Hero Section */        
+#title_image2 { 
       padding-top:1%;
       width: 45%;
       margin:auto;
-}
+      }
 
-#enterprise_icon {
+/* The logo enterprise from the developers of the game Team Cherry */      
+#enterprise_icon { 
       position:absolute;
       width:10%;
       right: 5%;
       bottom: 5%;
-}
+      }
 
-/*********************** SPELLS SECTION ************/
+/*********************** SPELLS SECTION ******************/
 
-#spellimg {padding:2%;}
+/* To separate the image from the text (que corra el aire) */
+#spellimg {padding:2%;} 
 
-.text {
-       font-size:1.5rem;
-       text-align:center;
-       color:white;}
+/* The columns of the spell section grid */
+.spellcolumn { 
+      padding: 4%; /* Separation between columns */
+      }   
 
-
-.spellcolumn {
-      padding: 4%;
-}
-
-.grid {display:grid;
+/* We create the grid for the spell section */      
+.grid {
+       display:grid; 
        grid-template-columns: 33% 33% 33%;
        }
 
-.card {box-shadow: 0 4px 8px 0 rgba(79, 74, 97, 0.5); /* Add shadows to create the "card" effect */
+.card {
+       box-shadow: 0 4px 8px 0 rgba(79, 74, 97, 0.5); /* Add shadows to create the "card" effect */
        transition: 0.3s;
-       padding:10px;;
+       padding:10px;
        }
 
-.card img {
+/* We add a filter to the card images */
+.card img { 
       width:100%;
       filter:sepia();
 }
@@ -193,8 +197,11 @@ h1 {margin:auto;
 .card:hover {box-shadow: 0 8px 16px 0 rgba(245, 245, 245, 0.2);
              filter:none;}
 
-.card:hover img {transition:1s;
-                 filter:none;}
+/* The filter dissapears when you hover the mouse over the img */
+.card:hover img {
+                 transition:1s;
+                 filter:none;
+                } 
 
 /* Add some padding inside the card container */
 .container {padding: 2px 16px;
@@ -204,22 +211,21 @@ h1 {margin:auto;
 
 
 #abilities_text {
-      padding-bottom:4%;
-}
+      padding-bottom:4%; /* Distance between the text */
+      }
 
-/******************** SLIDESHOW FROM W3SCHOOLS **********/
-
+/* Slideshow snippet from W3Schools */
 /* Slideshow container */
 .slideshow-container {
       max-width: 1000px;
       position: relative;
       margin: auto;
-    }
+      }
     
     /* Hide the images by default */
     .mySlides {
       display: none;
-    }
+      }
     
     /* Next & previous buttons */
     .prev, .next {
@@ -235,18 +241,18 @@ h1 {margin:auto;
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
       user-select: none;
-    }
+      }
     
     /* Position the "next button" to the right */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
-    }
+      }
     
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
-    }
+      }
     
     /* Caption text */
     .slideshow_text {
@@ -263,7 +269,7 @@ h1 {margin:auto;
                    3px 3px 3px black,
                    -3px 3px 3px black,
                    0px -3px 2px black;
-    }
+      }
     
     /* Number text (1/4 etc) */
     .numbertext {
@@ -272,7 +278,7 @@ h1 {margin:auto;
       padding: 8px 12px;
       position: absolute;
       top: 0;
-    }
+      }
     
     /* The dots/bullets/indicators */
     .dot {
@@ -284,59 +290,59 @@ h1 {margin:auto;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
-    }
+      }
     
     .active, .dot:hover {
       background-color: #717171;
-    }
+      }
     
     /* Fading animation */
     .fade {
       animation-name: fade;
       animation-duration: 1.5s;
-    }
+      }
     
     @keyframes fade {
       from {opacity: .4}
       to {opacity: 1}
-    }
+      }
 
 /***************** CHARMS SECTION ***************/
 
+/* We create the grid from the charm section */
+.grid2 {
+       display:grid;
+       grid-template-columns: 50% 50%;
+       }
 
-.grid2 {display:grid;
-        grid-template-columns: 50% 50%;}
-
+/* Distance between columns from the grid (also distance between the lists) */
 .charmcolumn {padding: 4%;}
-.charmcolumn li {margin-left: 5%;
-                 margin-top:2%;
-      font-size:1rem}
+.charmcolumn li {
+                margin-left: 5%;
+                margin-top:2%;
+                font-size:1rem;
+                }
 
-
+/* The text on the Melee list to the left */
 #meleelist {
       text-align: left;
-}
+      }
 
-
-
+/* The text on the Spellcaster list on the right */
 #spellcasterlist {
       text-align: right;
       list-style-position: inside;
-}
-
-.grid3 {display:grid;
-  grid-template-columns: 25% 25% 25% 25%;}
-
-
+      }
 
 /********************** DLCS SECTION ****************/
 
+/* Create the grid from the DLC Section */
+.grid3 {display:grid;
+  grid-template-columns: 25% 25% 25% 25%;}
 
-/************* FLIPCARD FROM W3SCHOOLS ***************/
-
-
- /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
- .flip-card {
+/* Flipcard snippet from W3Schools */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
       background-color: transparent;
       font-family: texts;
       font-size: 1.5rem;
@@ -344,7 +350,7 @@ h1 {margin:auto;
       height: 59.2vh;
       margin: auto;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    }
+      }
     
     /* This container is needed to position the front and back side */
     .flip-card-inner {
@@ -362,7 +368,7 @@ h1 {margin:auto;
       
     }
     
-    /* Position the front and back side */
+    /* Position the front side */
     .flip-card-front {
       position: absolute;
       width: 100%;
@@ -371,6 +377,9 @@ h1 {margin:auto;
       -webkit-backface-visibility: visible; /* Safari */
       
     }
+
+    /* Position the back side (I added a little change to make the backface visible when flipped so it gives
+       a transparent effect to the background) */
     .flip-card-back {
       position: absolute;
       width: 100%;
@@ -392,24 +401,29 @@ h1 {margin:auto;
       background-image: none;
     } 
 
+    /* Distance on the text from the title */
     #cardtext {
       padding: 20% 2%;
-    }
+      }
 
+    /* Separate the title from the card */
     h3 {margin-top: 8%;}
 
 
-    /********************* SILKSONG SECTION ***************/
 
 
+/********************* SILKSONG SECTION ***************/
+
+/* The video container */
 .container2 {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   margin: auto;
-}
+  }
 
+/* We make the video responsive */
 .responsive-iframe {
   position: absolute;
   top: 50%;
@@ -419,117 +433,131 @@ h1 {margin:auto;
   transform:translate(-50%,-50%);
   width: 75%;
   height: 75%;
-}
+  }
 
 
 
 
 /******************************* FOOTER **********************/
-footer {background-color: #0F0C23;
-        margin-top: -1%;}
 
+/* We add a black background to the footer */
+footer {
+       background-color: #0F0C23;
+       margin-top: -1%;
+       }
 
-.grid4 {display: grid;
-        grid-template-columns: 40% 15% 15% 30%;
-      }
+/* We create the footer grid */
+.grid4 {
+       display: grid;
+       grid-template-columns: 40% 15% 15% 30%;
+       }
 
-.footercolumn{
-  color:white;
-  font-size: 1.5rem;}
+/* Footer column config */
+.footercolumn {
+              color:white;
+              font-size: 1.5rem;
+              }
 
-.footercolumnlink{
+/* We align the links to the left */
+.footercolumnlink {
   text-align: left;
-}
+  }
 
-.link{text-decoration:none;
+/* Links configuration */
+.link{
+      text-decoration:none;
       padding: 10%;
       line-height: 4rem;
       font-weight: bold;
       color:white;
-      font-size: 1.5rem;}
+      font-size: 1.5rem;
+     }
 
 .link:hover{color:gray}
 
+
 .footercolumn img {width:50%;}
 
-                   .fa {
-                    position: relative;
-                    left: 20%;
-                    padding: 15px;  /*************/
-                    font-size: 20px; /************/
-                    width: 50px;
-                    text-align: center;
-                    text-decoration: none;
-                    margin: 4% 2%;
-                    border-radius:50%; /*************/
-                  }
-                  
-            .fa:hover {
-                      opacity: 0.7;
-                  }
-            
-            .fa-facebook {
-                    background: #3B5998;
-                    color: white;
-                  }
-                  
-            .fa-twitter {
-                    background: #55ACEE;
-                    color: white;
-                  }
-                  
-                  
-                  
-            .fa-youtube {
-                    background: #bb0000;
-                    color: white;
-                  }
-                  
-                  .fa-google {
-                    background: #dd4b39;
-                    color: white;
-                  }
+/* The social network icons */
+.fa {
+    position: relative;
+    left: 20%;
+    padding: 15px;  /*************/
+    font-size: 20px; /************/
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4% 2%;
+    border-radius:50%; /*************/
+    }
+
+.fa:hover {
+          opacity: 0.7;
+          }
+
+.fa-facebook {
+             background: #3B5998;
+             color: white;
+             }
+
+.fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
+
+.fa-youtube {
+            background: #bb0000;
+            color: white;
+            }
+
+.fa-google {
+           background: #dd4b39;
+           color: white;
+           }
 
 
 /**************************** MEDIA QUERIES *******************************/
 
 @media only screen and (width<=1000px){
-  #title_image1 {
-    width: 50%;
-    padding-top: 12%;
+
+#title_image1 {
+    width: 60%;
+    padding-top: 20%;
     padding-left:2%;
-}
+    }
+
 #maintitle {
   font-size:3rem;
-}
+  }
+
 #title_image2 {
     padding-top:1%;
-    width: 65%;
+    width: 75%;
     padding-left:1%;
     padding-bottom: 5%;
-}
+    }
 
 #enterprise_icon {
     position:absolute;
     width:15%;
     right: 5%;
     bottom: 5%;
-    
-}
+    }
 
-.grid {grid-template-columns: 100%;
-  }
+.grid {grid-template-columns: 100%;}
 
 .grid2 {grid-template-columns: 100%;}
 
-.grid3 {
-  grid-template-columns: 50% 50%;
-}
+.grid3 {grid-template-columns: 50% 50%;}
 
 .title {font-size:4rem;}
+
 h1 {font-size:4rem;}
-.text {font-size:1.5rem;
-       padding:2%;}
+
+.text {
+      font-size:1.5rem;
+      padding:2%;
+      }
 
 
 li {text-align: center;
@@ -547,46 +575,52 @@ li {text-align: center;
 }
 
 
-
-
 @media only screen and (width<=600px){
+
 #title_image1 {
   width: 60%;
-  padding-top: 20%;
+  padding-top: 40%;
   padding-left:2%;
-}
-#maintitle {
-  font-size:2rem;
-}
+  }
+
+#maintitle {font-size:2.5rem;}
+
 #title_image2 {
   padding-top:1%;
   width: 75%;
   padding-left:1%;
   padding-bottom: 5%;
-}
+  }
 
 #enterprise_icon {
   position:absolute;
   width:25%;
   right: 5%;
   bottom: 5%;
-  
-}
-.grid3 {
-  grid-template-columns: 100%;
-  
-}
+  }
+
+.grid3 {grid-template-columns: 100%;}
 
 .title {font-size:3rem;}
+
 h1 {font-size:3rem;}
+
 .text {font-size:1rem;}
 
-.link {font-size:1rem;
-       line-height:3rem;}
+.link {
+      font-size:1rem;
+      line-height:3rem;
+      }
 
 .grid4 {grid-template-columns: 60% 20% 20%;}
 
 .slideshow_text {
   font-size:1rem;
-}
+  }
+
+.fa {
+  left:4%;
+  margin: 4%;
+  }
+
 }
